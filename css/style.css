@@ -39,6 +39,10 @@
     background-color: #c3d9fc;
 }
 
+.container{
+    width: 100%;
+}   
+
 /*
                                                     HEADER
 */
@@ -145,8 +149,63 @@ div.card div.description {
 /*
 SECTION BENEFICTS
 */
-section.beneficts div.card{
+
+section.beneficts {
+    padding: 1rem;
+}
+
+
+section.beneficts div.card {
     width: 100%;
+}
+
+
+/*
+SECTION ABOUT-US
+*/
+section.about-us {
+    padding: 1rem;
+}
+
+section.about-us div.box-test {
+    width: 100%;
+    height: 20rem;
+
+    border: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+section.about-us div.card {
+    border: 1px solid black;
+}
+
+/*
+SECTION GET-STARTED
+*/
+main section.get-started {
+    padding: 1rem;
+}
+
+section.get-started > div.box {
+    width: 100%;
+
+    border: 1px solid black;
+}
+
+/*
+FOOTER
+*/
+footer{
+    background-color: #363636;
+    padding: 1rem;
+    
+    color: white;
+}
+
+footer div.box{
+    width: 100%;
+
+    border: 1px solid white;
 }
 
 /*
@@ -154,18 +213,12 @@ section.beneficts div.card{
 */
 
 /*TABLET*/
-@media screen and (min-width: 468px) {
-    /*afterwards it will be possible to remove it*/
-
+@media screen and (min-width: 768px) {
+    /*after remove*/
     header {
-        background-color: red;
+        background-color: rgb(214, 156, 134);
     }
-
-    /*Container*/
-    main section.cards {
-        width: 70%;
-        margin: 0 auto;
-    }
+    
 
     section.cards div.card {
         width: calc((100% / 3) - 1rem);
@@ -183,7 +236,7 @@ section.beneficts div.card{
         height: 400px;
     }
 
-    section.testimonial div.card{
+    section.testimonial div.card {
         flex-direction: row;
     }
 
@@ -191,26 +244,56 @@ section.beneficts div.card{
     /*
     SECTION BENEFICTS
     */
-    section.beneficts div.card{
+    section.beneficts div.card {
         width: calc((100% / 2) - 1rem);
         margin-right: 1rem;
     }
 
+    /*
+    SECTION ABOUT-US
+    */
+
+    section.about-us {
+        flex-direction: row;
+    }
+
+    section.about-us div.box-test {
+        margin-right: 2rem;
+    }
+
+    /*
+    SECTION GET-STARTED
+    */
+    section.get-started > div.box {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /*
+    FOOTER
+    */
+    footer div.box{
+        width: 50%;
+        margin: 0 auto;
+    }
 
 }
 
 
-/*Section beneficts*/
-section.beneficts{
-    padding: 1rem;
-}
 
-/*DESKTOP*/
-@media only screen and (min-width: 768px) {
+/*
+DESKTOP
+*/
+@media only screen and (min-width: 992px) {
 
     /*afterwards it will be possible to remove it*/
     header {
         background-color: rgb(55, 0, 255);
+    }
+
+    .container{
+        width: 70%;
+        margin: 0 auto;
     }
 
     main section.background-pink {
@@ -222,6 +305,7 @@ section.beneficts{
         width: 45%;
     }
 
+
     section.testimonial {
         margin: 0 auto;
         width: 70%;
@@ -231,9 +315,30 @@ section.beneficts{
     /*
     SECTION BENEFICTS
     */
-    
-    section.beneficts div.card{
+    section.beneficts>div.box {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    section.beneficts div.card {
         width: calc((100% / 3) - 1rem);
         margin-right: 1rem;
+    }
+
+    /*
+    SECTION ABOUT-US
+    */
+    section.about-us {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+      /*
+    SECTION GET-STARTED
+    */
+    section.get-started > div.box {
+        width: 50%;
+        margin: 0 auto;
     }
 }
