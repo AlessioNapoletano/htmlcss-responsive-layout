@@ -269,7 +269,7 @@ footer div.box {
     SECTION ABOUT-US
     */
 
-    section.about-us {
+    section.about-us div.container{
         flex-direction: row;
     }
 
@@ -343,16 +343,6 @@ DESKTOP
     section.beneficts div.card {
         width: calc((100% / 3) - 1rem);
     }
-
-
-    /*
-    SECTION ABOUT-US
-    */
-    section.about-us {
-        width: 70%;
-        margin: 0 auto;
-    }
-
 
     /*
     SECTION GET-STARTED
