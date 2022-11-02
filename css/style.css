@@ -39,9 +39,9 @@
     background-color: #c3d9fc;
 }
 
-.container{
+.container {
     width: 100%;
-}   
+}
 
 /*
                                                     HEADER
@@ -72,7 +72,7 @@ header nav {
                                                     MAIN
 */
 
-main{
+main {
     padding-top: 4rem;
 }
 
@@ -83,7 +83,7 @@ main section.introduction {
     padding: 1rem;
 }
 
-section.introduction div.cards > div.card {
+section.introduction div.cards>div.card {
     width: 100%;
     height: 200px;
 
@@ -92,13 +92,13 @@ section.introduction div.cards > div.card {
     margin-bottom: 1rem;
 }
 
-section.introduction div.cards > div.card:first-child {
+section.introduction div.cards>div.card:first-child {
     height: 400px;
 }
 
 
 /*
-PLANNING
+SECTION PLANNING
 */
 main section.planning {
     padding: 1rem;
@@ -124,14 +124,21 @@ section.planning div.box:last-child {
     border-radius: 20px;
 }
 
-/*SEZIONE TESTIMONIAL*/
-section.testimonial {
-    padding: 2rem;
 
-    width: 100%;
+
+/*
+SECTION TESTIMONIAL
+*/
+section.testimonial {
+    padding: 1rem;
 }
 
-div.card div.profile-picture {
+section.testimonial div.card {
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+section.testimonial div.card div.profile-picture {
     border: 1px solid black;
     background-color: white;
     border-radius: 100%;
@@ -141,7 +148,7 @@ div.card div.profile-picture {
 
 }
 
-div.card div.description {
+section.testimonial div.card div.description {
     border: 1px solid black;
     width: 60%;
     height: 3rem;
@@ -160,6 +167,9 @@ section.beneficts {
 
 section.beneficts div.card {
     width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
 }
 
 
@@ -189,7 +199,7 @@ main section.get-started {
     padding: 1rem;
 }
 
-section.get-started > div.box {
+section.get-started>div.box {
     width: 100%;
 
     border: 1px solid black;
@@ -198,14 +208,14 @@ section.get-started > div.box {
 /*
 FOOTER
 */
-footer{
+footer {
     background-color: #363636;
     padding: 1rem;
-    
+
     color: white;
 }
 
-footer div.box{
+footer div.box {
     width: 100%;
 
     border: 1px solid white;
@@ -217,34 +227,31 @@ footer div.box{
 
 /*TABLET*/
 @media screen and (min-width: 768px) {
+
     /*after remove*/
     header {
         background-color: rgb(214, 156, 134);
     }
-    
+
     /*
     SECTION INTRODUCTION
     */
-    section.introduction div.cards > div.card {
+    section.introduction div.cards>div.card {
         width: calc((100% / 3) - 1rem);
         height: 400px;
 
         margin-left: 1rem;
     }
 
-    section.introduction div.cards > div.card:first-child {
+    section.introduction div.cards>div.card:first-child {
         width: calc(((100% / 3) * 2) - 1rem);
 
         height: 400px;
     }
 
     /*
-    SECTION PLANNING
+    SECTION TESTIMONIAL
     */
-    section.planning
-
-
-
     section.testimonial div.card {
         flex-direction: row;
     }
@@ -273,7 +280,7 @@ footer div.box{
     /*
     SECTION GET-STARTED
     */
-    section.get-started > div.box {
+    section.get-started>div.box {
         width: 50%;
         margin: 0 auto;
     }
@@ -281,7 +288,7 @@ footer div.box{
     /*
     FOOTER
     */
-    footer div.box{
+    footer div.box {
         width: 50%;
         margin: 0 auto;
     }
@@ -300,20 +307,20 @@ DESKTOP
         background-color: rgb(55, 0, 255);
     }
 
-    .container{
+    .container {
         width: 70%;
         margin: 0 auto;
     }
 
     /*
-    SECTION PLLANING
+    SECTION PLANNING
     */
-    section.planning div.container{
+    section.planning div.container {
         flex-direction: row;
         display: flex;
     }
 
-    section.planning div.container > div.box{
+    section.planning div.container>div.box {
         width: calc((100% / 2) - 1rem);
         margin-right: 1rem;
     }
@@ -330,25 +337,13 @@ DESKTOP
         width: 45%;
     }
 
-
-    section.testimonial {
-        margin: 0 auto;
-        width: 70%;
-
-    }
-
     /*
     SECTION BENEFICTS
     */
-    section.beneficts>div.box {
-        width: 70%;
-        margin: 0 auto;
-    }
-
     section.beneficts div.card {
         width: calc((100% / 3) - 1rem);
-        margin-right: 1rem;
     }
+
 
     /*
     SECTION ABOUT-US
@@ -359,10 +354,10 @@ DESKTOP
     }
 
 
-      /*
+    /*
     SECTION GET-STARTED
     */
-    section.get-started > div.box {
+    section.get-started>div.box {
         width: 50%;
         margin: 0 auto;
     }
