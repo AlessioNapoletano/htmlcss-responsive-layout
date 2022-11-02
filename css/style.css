@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}/*
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
                                                     GENERIC ELEMENT
 */
-button{
+button {
     border: none;
     padding: .5rem .6rem;
     background-color: white;
     border-radius: 20px;
     cursor: pointer;
+}
+
+i {
+    font-size: 2rem;
 }
 
 /*
@@ -23,7 +30,8 @@ button{
 .flex-between {
     justify-content: space-between;
 }
-.flex-end{
+
+.flex-end {
     justify-content: flex-end;
 }
 
@@ -33,6 +41,10 @@ button{
 
 .flex-column {
     flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .align-items-center {
@@ -51,6 +63,14 @@ button{
     background-color: #c3d9fc;
 }
 
+.background-blue {
+    background-color: #0083fd;
+}
+
+.font-blue {
+    color: #0083fd;
+}
+
 .container {
     width: 100%;
 }
@@ -59,7 +79,7 @@ button{
                                                     HEADER
 */
 header {
-    background-color: #5876f7;
+    background-color: #0084fd;
     width: 100%;
     height: 3.5rem;
     padding: .5rem;
@@ -79,13 +99,11 @@ header nav {
     color: white;
 }
 
-nav ul{
+nav ul {
     display: none;
 }
 
-
-
-nav ul li{
+nav ul li {
     display: inline;
     padding: 0 .5rem;
 }
@@ -107,15 +125,33 @@ main section.introduction {
 
 section.introduction div.cards>div.card {
     width: 100%;
-    height: 200px;
-
+    /*height: 200px;*/  
     border-radius: 20px;
-
     margin-bottom: 1rem;
+    padding: 1.5rem 1.5rem 0;
 }
 
 section.introduction div.cards>div.card:first-child {
     height: 400px;
+}
+
+section.introduction div.card>p {
+    padding: 1.5rem 0;
+}
+
+section.introduction div.card>button {
+    color: white;
+}
+
+section.introduction div.card>img {
+    margin-top: 1rem;
+    width: 150px;
+    height: 175px;
+}
+
+section.introduction div.card>i {
+    font-size: 5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -254,13 +290,15 @@ footer div.box {
     header {
         background-color: rgb(214, 156, 134);
     }
+
     /*
     HEADER
     */
-    nav p{
+    nav p {
         display: none;
     }
-    nav ul{
+
+    nav ul {
         display: block;
     }
 
