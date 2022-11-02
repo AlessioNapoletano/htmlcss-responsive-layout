@@ -199,7 +199,7 @@ main section.get-started {
     padding: 1rem;
 }
 
-section.get-started>div.box {
+section.get-started > div.container {
     width: 100%;
 
     border: 1px solid black;
@@ -277,10 +277,10 @@ footer div.box {
         margin-right: 2rem;
     }
 
-    /*
+     /*
     SECTION GET-STARTED
     */
-    section.get-started>div.box {
+    section.get-started > div.container{
         width: 50%;
         margin: 0 auto;
     }
@@ -325,18 +325,6 @@ DESKTOP
         margin-right: 1rem;
     }
 
-
-
-
-    main section.background-pink {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    section.background-pink div.box {
-        width: 45%;
-    }
-
     /*
     SECTION BENEFICTS
     */
@@ -344,11 +332,4 @@ DESKTOP
         width: calc((100% / 3) - 1rem);
     }
 
-    /*
-    SECTION GET-STARTED
-    */
-    section.get-started>div.box {
-        width: 50%;
-        margin: 0 auto;
-    }
 }
