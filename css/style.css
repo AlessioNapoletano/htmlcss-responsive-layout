@@ -51,6 +51,8 @@ header {
     width: 100%;
     height: 3rem;
     padding: .3rem;
+
+    position: fixed;
 }
 
 header div.logo {
@@ -70,6 +72,9 @@ header nav {
                                                     MAIN
 */
 
+main{
+    padding-top: 4rem;
+}
 
 /*
 SECTION INTRODUCTION
@@ -81,7 +86,7 @@ main section.introduction {
 section.introduction div.cards > div.card {
     width: 100%;
     height: 200px;
-    
+
     border-radius: 20px;
 
     margin-bottom: 1rem;
@@ -96,9 +101,6 @@ section.introduction div.cards > div.card:first-child {
 PLANNING
 */
 main section.planning {
-
-
-    width: 100%;
     padding: 1rem;
 
     /*per la spaziatura con la section antecedente*/
@@ -120,9 +122,6 @@ section.planning div.box {
 
 section.planning div.box:last-child {
     border-radius: 20px;
-
-    /*altrimenti erediterebbe il bordo che qui non serve*/
-    border: none;
 }
 
 /*SEZIONE TESTIMONIAL*/
@@ -239,7 +238,10 @@ footer div.box{
         height: 400px;
     }
 
-
+    /*
+    SECTION PLANNING
+    */
+    section.planning
 
 
 
@@ -302,6 +304,22 @@ DESKTOP
         width: 70%;
         margin: 0 auto;
     }
+
+    /*
+    SECTION PLLANING
+    */
+    section.planning div.container{
+        flex-direction: row;
+        display: flex;
+    }
+
+    section.planning div.container > div.box{
+        width: calc((100% / 2) - 1rem);
+        margin-right: 1rem;
+    }
+
+
+
 
     main section.background-pink {
         flex-direction: row;
