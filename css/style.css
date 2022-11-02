@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,43 +7,55 @@
 /*
                                                     GENERIC CLASS
 */
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-between{
+.flex-between {
     justify-content: space-between;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
+.align-items-center {
+    align-items: center;
+}
 
-.background-white{
+.background-white {
     background-color: #ffffff;
 }
+
+.background-violet {
+    background-color: #988adf;
+}
+
+.background-light-blue {
+    background-color: #c3d9fc;
+}
+
 /*
                                                     HEADER
 */
-header{
+header {
     background-color: #5876f7;
     width: 100%;
     height: 3rem;
     padding: .3rem;
 }
 
-header div.logo{
+header div.logo {
     width: 50%;
     height: 100%;
     border: 1px solid black;
 }
 
-header nav{
+header nav {
     width: 50%;
     height: 100%;
     border: 1px solid black;
@@ -54,27 +66,29 @@ header nav{
                                                     MAIN
 */
 
-main section.cards{
+main section.cards {
+    padding: 1rem;
     width: 100%;
 }
 
-main div.card{
+div.card {
     width: 100%;
+
     height: 200px;
 
     border-radius: 20px;
+    margin-bottom: 1rem;
 
-    background-color: #c3d9fc;
-    margin: 1rem;
+
 }
 
-main div.card:first-child{
+section.cards div.card:first-child {
     height: 400px;
 }
 
 
-main section.background-pink{
-    background-color: #988adf;
+main section.planning {
+
 
     width: 100%;
     padding: 1rem;
@@ -84,8 +98,10 @@ main section.background-pink{
 }
 
 
-section.background-pink div.box{
+section.planning div.box {
     width: 100%;
+
+    /*afterwards it will be possible to remove it*/
     height: 20rem;
 
     margin-bottom: 1rem;
@@ -94,51 +110,130 @@ section.background-pink div.box{
     border: 1px solid black;
 }
 
-section.background-pink div.box:last-child{
+section.planning div.box:last-child {
     border-radius: 20px;
 
     /*altrimenti erediterebbe il bordo che qui non serve*/
     border: none;
-}   
+}
+
+/*SEZIONE TESTIMONIAL*/
+section.testimonial {
+    padding: 2rem;
+
+    width: 100%;
+}
+
+div.card div.profile-picture {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 100%;
+
+    height: 135px;
+    width: 125px;
+
+}
+
+div.card div.description {
+    border: 1px solid black;
+    width: 60%;
+    height: 3rem;
+
+}
+
+
+/*
+SECTION BENEFICTS
+*/
+section.beneficts div.card{
+    width: 100%;
+}
 
 /*
                                                     MEDIA QUERY
 */
 
 /*TABLET*/
-@media screen and (min-width: 768px){
-    header{
+@media screen and (min-width: 468px) {
+    /*afterwards it will be possible to remove it*/
+
+    header {
         background-color: red;
     }
 
-    main section.cards{
+    /*Container*/
+    main section.cards {
         width: 70%;
         margin: 0 auto;
     }
-    main div.card{
-        width: calc((100% / 3) - 2rem);
+
+    section.cards div.card {
+        width: calc((100% / 3) - 1rem);
+
+        /*afterwards it will be possible to remove it*/
+        height: 400px;
+
+        margin-left: 1rem;
+    }
+
+    section.cards div.card:first-child {
+        width: calc(((100% / 3) * 2) - 1rem);
+
+        /*afterwards it will be possible to remove it*/
         height: 400px;
     }
-    
-    main div.card:first-child{
-        width: calc(((100% / 3) * 2) - 2rem);
-        height: 400px;
+
+    section.testimonial div.card{
+        flex-direction: row;
     }
+
+
+    /*
+    SECTION BENEFICTS
+    */
+    section.beneficts div.card{
+        width: calc((100% / 2) - 1rem);
+        margin-right: 1rem;
+    }
+
 
 }
 
+
+/*Section beneficts*/
+section.beneficts{
+    padding: 1rem;
+}
+
 /*DESKTOP*/
-@media only screen and (min-width: 1100px){
-    header{
+@media only screen and (min-width: 768px) {
+
+    /*afterwards it will be possible to remove it*/
+    header {
         background-color: rgb(55, 0, 255);
     }
 
-    main section.background-pink{
-        background-color: #988adf;
-    
-        width: 100%;
-        padding: 1rem;
-        
+    main section.background-pink {
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section.background-pink div.box {
+        width: 45%;
+    }
+
+    section.testimonial {
+        margin: 0 auto;
+        width: 70%;
+
+    }
+
+    /*
+    SECTION BENEFICTS
+    */
+    
+    section.beneficts div.card{
+        width: calc((100% / 3) - 1rem);
+        margin-right: 1rem;
     }
 }
