@@ -404,8 +404,10 @@ footer {
 
 footer div.box {
     width: 100%;
+}
 
-    border: 1px solid white;
+footer div.box>p{
+    padding: 1rem 0;
 }
 
 /*
