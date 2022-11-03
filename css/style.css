@@ -114,15 +114,16 @@ header {
     padding: .5rem;
 
     position: fixed;
+    z-index: 2;
 }
 
 header div.logo {
-    width: 30%;
+    width: 20%;
     height: 100%;
 }
 
 header nav {
-    width: 70%;
+    width: 80%;
     height: 100%;
 
     color: white;
@@ -348,10 +349,10 @@ section.beneficts div.card>button {
 
 
 /*
-SECTION ABOUT-US
+                                                SECTION ABOUT-US
 */
 section.about-us {
-    padding: 1rem;
+    padding: 1rem 3rem;
 }
 
 section.about-us div.box-test {
@@ -362,7 +363,7 @@ section.about-us div.box-test {
 
 section.about-us div.box-test>h1 {
     font-size: 2rem;
-    padding: 1rem 0 2rem;
+    padding: 2.7rem 0 2rem;
 }
 
 section.about-us div.box-test>p {
@@ -375,6 +376,16 @@ section.about-us div.card>div.profile-picture {
     margin: 1rem 0;
     height: 135px;
     width: 125px;
+
+    position: relative;
+}
+
+/*For correct position of element i*/
+section.about-us div.card>div.profile-picture>i {
+    position: absolute;
+    font-size: 3rem;
+    top: -11px;
+    right: -9px;
 }
 
 section.about-us div.card>div.profile-picture>img {
@@ -385,7 +396,7 @@ section.about-us div.card>div.profile-picture>img {
 }
 
 section.about-us div.card>div.description>button {
-    margin: 1rem 0;
+    margin: 1.5rem 0 5rem;
 
 }
 
@@ -537,7 +548,8 @@ footer div.box>p {
     }
 
     section.about-us div.card {
-        width: 34%;
+        width: 33%;
+        padding: 2.5rem 0 0 2rem;
     }
 
 
