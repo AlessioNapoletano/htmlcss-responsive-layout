@@ -67,13 +67,22 @@ i {
     background-color: #0083fd;
 }
 
+.container {
+    width: 100%;
+}
+
 .font-blue {
     color: #0083fd;
 }
 
-.container {
-    width: 100%;
+.txt-white {
+    color: white;
 }
+
+.txt-center {
+    text-align: center;
+}
+
 
 /*
                                                     HEADER
@@ -125,7 +134,7 @@ main section.introduction {
 
 section.introduction div.cards>div.card {
     width: 100%;
-    /*height: 200px;*/  
+    /*height: 200px;*/
     border-radius: 20px;
     margin-bottom: 1rem;
     padding: 1.5rem 1.5rem 0;
@@ -168,19 +177,40 @@ main section.planning {
 
 section.planning div.box {
     width: 100%;
-
-    /*afterwards it will be possible to remove it*/
-    height: 20rem;
-
     margin-bottom: 1rem;
+}
 
-    /*per capire la dimensione del blocco*/
-    border: 1px solid black;
+section.planning div.box>div.box-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 2rem;
+}
+
+section.planning div.box>div.box-image>img {
+    width: 100%;
+    height: 100%;
 }
 
 section.planning div.box:last-child {
     border-radius: 20px;
 }
+
+section.planning div.box-txt>p {
+    padding: 1.5rem 0;
+}
+
+section.planning button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    margin-bottom: 1rem;
+}
+
+
+
+
+
 
 
 
@@ -191,26 +221,46 @@ section.testimonial {
     padding: 1rem;
 }
 
+section.testimonial div.container>h1 {
+    padding: 1rem;
+}
+
 section.testimonial div.card {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     border-radius: 20px;
 }
 
 section.testimonial div.card div.profile-picture {
-    border: 1px solid black;
     background-color: white;
-    border-radius: 100%;
+    border-radius: 50%;
+
+    margin: 1rem 0;
 
     height: 135px;
     width: 125px;
 
 }
 
-section.testimonial div.card div.description {
-    border: 1px solid black;
-    width: 60%;
-    height: 3rem;
+section.testimonial div.card div.profile-picture>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 
+    object-fit: cover;
+}
+
+section.testimonial div.card div.description {
+    padding: 1rem;
+}
+
+/*per dare padding tra il paragrafo e l'h3*/
+section.testimonial div.card div.description>p {
+    padding-bottom: 1rem;
+}
+
+/*Dimensione della icon figlia del paragrado*/
+section.testimonial div.card div.description>p>i {
+    font-size: 1rem;
 }
 
 
@@ -325,6 +375,17 @@ footer div.box {
         flex-direction: row;
     }
 
+    section.testimonial div.card div.profile-picture {
+        margin: 1rem 1rem;
+        height: 135px;
+        width: 184px;
+    }
+
+    /*Per far partire il testo giustificato da destra, altrimenti eredita la centratura*/
+    section.testimonial div.card div.description {
+        text-align: start;
+    }
+
 
     /*
     SECTION BENEFICTS
@@ -380,6 +441,7 @@ DESKTOP
         width: 70%;
         margin: 0 auto;
     }
+
 
     /*
     SECTION PLANNING
