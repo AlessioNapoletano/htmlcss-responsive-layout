@@ -17,7 +17,7 @@ button {
 }
 
 i {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /*
@@ -75,11 +75,18 @@ i {
     color: #0083fd;
 }
 
+.font-orange{
+    color: #eac56b;
+}
+
+.font-grey{
+    color: rgba(211, 211, 211, 0.342);
+}
 .txt-white {
     color: white;
 }
 
-.font-violet{
+.font-violet {
     color: #988adf;
 }
 
@@ -286,15 +293,20 @@ section.beneficts div.card {
     padding: 1.5rem 1rem;
 }
 
-section.beneficts div.card>h1{
+section.beneficts div.container>h1 {
+    width: 100%;
+    padding: 1rem;
+}
+
+section.beneficts div.card>h2 {
     font-size: 3rem;
 }
 
-section.beneficts div.card>p{
+section.beneficts div.card>p {
     padding: 1rem 0;
 }
 
-section.beneficts div.card>button{
+section.beneficts div.card>button {
     margin-bottom: 1rem;
     padding: 0.5rem 3rem;
 
@@ -309,28 +321,76 @@ section.about-us {
 
 section.about-us div.box-test {
     width: 100%;
-    height: 20rem;
 
-    border: 1px solid black;
     margin-bottom: 1rem;
 }
 
-section.about-us div.card {
-    border: 1px solid black;
+section.about-us div.box-test>h1 {
+    font-size: 2rem;
+    padding: 1rem 0 2rem;
 }
+
+section.about-us div.box-test>p {
+    padding-bottom: 2.5rem;
+    line-height: 1cm;
+}
+
+section.about-us div.card>div.profile-picture {
+    border-radius: 50%;
+    margin: 1rem 0;
+    height: 135px;
+    width: 125px;
+}
+
+section.about-us div.card>div.profile-picture>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+section.about-us div.card> div.description>button{
+    margin: 1rem 0;
+
+}
+
+/*
+END SECTION ABOUT-US - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*/
+
 
 /*
 SECTION GET-STARTED
 */
 main section.get-started {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
-section.get-started>div.container {
-    width: 100%;
-
-    border: 1px solid black;
+section.get-started div.container>h4{
+    font-weight: lighter;
+    padding: 1rem 0;
 }
+
+section.get-started div.container>h2{
+    font-size: 1.7rem;
+    padding-bottom: 2rem;
+}
+
+section.get-started div.container>h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+section.get-started div.container>button{
+    margin: 2rem 0;
+    padding: 1rem 4rem;
+}
+
+section.get-started div.container>p:last-child{
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
 
 /*
 FOOTER
@@ -424,7 +484,14 @@ footer div.box {
 
     section.about-us div.box-test {
         margin-right: 2rem;
+        width: 66%;
     }
+
+    section.about-us div.card{
+        width: 34%;
+    }
+
+
 
     /*
     SECTION GET-STARTED
