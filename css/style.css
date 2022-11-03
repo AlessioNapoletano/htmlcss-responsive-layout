@@ -79,6 +79,10 @@ i {
     color: white;
 }
 
+.font-violet{
+    color: #988adf;
+}
+
 .txt-center {
     text-align: center;
 }
@@ -273,13 +277,28 @@ section.beneficts {
 }
 
 
+
 section.beneficts div.card {
     width: 100%;
-    height: 250px;
     border-radius: 20px;
     margin-bottom: 1rem;
+
+    padding: 1.5rem 1rem;
 }
 
+section.beneficts div.card>h1{
+    font-size: 3rem;
+}
+
+section.beneficts div.card>p{
+    padding: 1rem 0;
+}
+
+section.beneficts div.card>button{
+    margin-bottom: 1rem;
+    padding: 0.5rem 3rem;
+
+}
 
 /*
 SECTION ABOUT-US
