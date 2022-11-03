@@ -20,6 +20,10 @@ i {
     font-size: 1rem;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 /*
                                                     GENERIC CLASS
 */
@@ -75,18 +79,19 @@ i {
     color: #0083fd;
 }
 
-.font-orange{
+.font-orange {
     color: #eac56b;
 }
 
-.font-grey{
+.font-grey {
     color: rgba(211, 211, 211, 0.342);
 }
+
 .txt-white {
     color: white;
 }
 
-.font-white{
+.font-white {
     color: white;
 }
 
@@ -165,11 +170,12 @@ section.introduction div.card>div.button>button {
 }
 
 /*Dimensione box che contiene l'immagine*/
-section.introduction div.card>div.image{
+section.introduction div.card>div.image {
     margin-top: 1rem;
     width: 150px;
     height: 150px;
 }
+
 section.introduction div.card>div.image>img {
     width: 100%;
     height: 100%;
@@ -180,12 +186,12 @@ section.introduction div.card>i {
     margin-bottom: 1rem;
 }
 
-/*                                           END SECTION INTRODUCTION
+/*                                               END SECTION INTRODUCTION
 --------------------------------------------------------------------------------------------------------------------
 */
 
 /*
-SECTION PLANNING
+                                                SECTION PLANNING
 */
 main section.planning {
     padding: 1rem;
@@ -199,6 +205,7 @@ section.planning div.box {
     margin-bottom: 1rem;
 }
 
+/*Center box image, with margin 0 auto*/
 section.planning div.box>div.box-image {
     margin: 0 auto;
 }
@@ -208,15 +215,19 @@ section.planning div.box>div.box-image>img {
     height: 100%;
 }
 
+/*Border radius of last child div-box*/
 section.planning div.box:last-child {
     border-radius: 46px;
+    padding: 1rem;
 }
 
+/*For correct spacing*/
 section.planning div.box-txt>p {
     padding: 1.5rem 0;
     line-height: 1.5rem;
 }
 
+/*button circle*/
 section.planning button {
     border-radius: 50%;
     width: 50px;
@@ -225,20 +236,21 @@ section.planning button {
     margin-bottom: 1rem;
 }
 
-/*                                           END SECTION PLANNING
+/*                                              END SECTION PLANNING
 --------------------------------------------------------------------------------------------------------------------
 */
 
 
-
-
-
-
 /*
-SECTION TESTIMONIAL
+                                                SECTION TESTIMONIAL
 */
 section.testimonial {
     padding: 1rem;
+}
+
+/*Padding for correct spacing*/
+section.testimonial div.container>p:first-child {
+    padding: 3rem 0 1rem;
 }
 
 section.testimonial div.container>h1 {
@@ -246,7 +258,7 @@ section.testimonial div.container>h1 {
 }
 
 section.testimonial div.card {
-    margin: 1rem 0;
+    margin: 2rem 0;
     border-radius: 20px;
 }
 
@@ -276,6 +288,7 @@ section.testimonial div.card div.description {
 /*per dare padding tra il paragrafo e l'h3*/
 section.testimonial div.card div.description>p {
     padding-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 /*Dimensione della icon figlia del paragrado*/
@@ -284,8 +297,12 @@ section.testimonial div.card div.description>p>i {
 }
 
 
+/*                                              END SECTION TESTIMONIAL
+--------------------------------------------------------------------------------------------------------------------
+*/
+
 /*
-SECTION BENEFICTS
+                                                SECTION BENEFICTS
 */
 
 section.beneficts {
@@ -320,6 +337,12 @@ section.beneficts div.card>button {
     padding: 0.5rem 3rem;
 
 }
+
+
+/*                                              END SECTION TESTIMONIAL
+--------------------------------------------------------------------------------------------------------------------
+*/
+
 
 /*
 SECTION ABOUT-US
@@ -358,48 +381,53 @@ section.about-us div.card>div.profile-picture>img {
     object-fit: cover;
 }
 
-section.about-us div.card> div.description>button{
+section.about-us div.card>div.description>button {
     margin: 1rem 0;
 
 }
 
 /*
-END SECTION ABOUT-US - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                                                END SECTION ABOUT-US 
+- - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - - ---
 */
 
 
 /*
-SECTION GET-STARTED
+                                                SECTION GET-STARTED
 */
 main section.get-started {
     padding: 1.5rem;
 }
 
-section.get-started div.container>h4{
+section.get-started div.container>h4 {
     font-weight: lighter;
     padding: 1rem 0;
 }
 
-section.get-started div.container>h2{
+section.get-started div.container>h2 {
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
 
-section.get-started div.container>h1{
+section.get-started div.container>h1 {
     font-size: 3rem;
     padding-bottom: 2rem;
 }
 
-section.get-started div.container>button{
+section.get-started div.container>button {
     margin: 2rem 0;
     padding: 1rem 4rem;
 }
 
-section.get-started div.container>p:last-child{
+section.get-started div.container>p:last-child {
     padding: 1rem 0;
     font-size: .8rem;
 }
 
+/*
+                                                END SECTION GET STARTED
+ - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - -- - - - - -
+*/
 
 /*
 FOOTER
@@ -415,7 +443,7 @@ footer div.box {
     width: 100%;
 }
 
-footer div.box>p{
+footer div.box>p {
     padding: 1rem 0;
 }
 
@@ -459,9 +487,10 @@ footer div.box>p{
     }
 
     /*For correct spacing*/
-    section.introduction div.card > div.image{
+    section.introduction div.card>div.image {
         margin-top: 2rem;
     }
+
     /*
     SECTION TESTIMONIAL
     */
@@ -471,8 +500,10 @@ footer div.box>p{
 
     section.testimonial div.card div.profile-picture {
         margin: 1rem 1rem;
-        height: 135px;
-        width: 184px;
+
+        height: 127px;
+        width: 211px;
+        max-width: 134px;
     }
 
     /*Per far partire il testo giustificato da destra, altrimenti eredita la centratura*/
@@ -502,7 +533,7 @@ footer div.box>p{
         width: 66%;
     }
 
-    section.about-us div.card{
+    section.about-us div.card {
         width: 34%;
     }
 
@@ -539,7 +570,7 @@ DESKTOP
     }
 
     .container {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -557,17 +588,18 @@ DESKTOP
         margin-right: 1rem;
     }
 
-    section.planning div.box-txt > h2{
+    section.planning div.box-txt>h2 {
         padding-top: 5rem;
     }
-    section.planning div.box-txt > p {
+
+    section.planning div.box-txt>p {
         padding: 3rem 0;
     }
 
-    section.planning div.container > div.box:last-child{
+    section.planning div.container>div.box:last-child {
         margin: 5rem 0 0 2rem;
     }
-    
+
 
     /*
     SECTION BENEFICTS
