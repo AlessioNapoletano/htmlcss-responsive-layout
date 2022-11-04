@@ -99,6 +99,10 @@ p {
     color: #988adf;
 }
 
+.font-black{
+    color: black;
+}
+
 .txt-center {
     text-align: center;
 }
@@ -126,6 +130,11 @@ header nav {
     width: 80%;
     height: 100%;
 
+    color: white;
+}
+
+header a{
+    text-decoration: none;
     color: white;
 }
 
@@ -160,6 +169,14 @@ section.introduction div.cards>div.card {
     padding: 1.5rem 1.5rem 0;
 }
 
+section.introduction div.cards>div.card:first-child{
+    position: relative;
+}
+section.introduction div.cards>div.card:first-child>div.image{
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+}
 section.introduction div.card>p {
     padding: 1.5rem 0;
     line-height: 1.5rem;
@@ -168,6 +185,7 @@ section.introduction div.card>p {
 /*Padding button*/
 section.introduction div.card>div.button>button {
     padding: .7rem 3rem;
+    margin-bottom: 10rem;
 }
 
 /*Dimensione box che contiene l'immagine*/
@@ -589,6 +607,17 @@ DESKTOP
         margin: 0 auto;
     }
 
+     /*
+    SECTION INTRODUCTION
+    */
+    section.introduction div.cards > div.card:first-child > div.image{
+        left: 55%;
+    }
+
+    /*
+                                                END SECTION INTRODUCTION
+     - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - -- - - 
+    */
 
     /*
     SECTION PLANNING
@@ -603,8 +632,12 @@ DESKTOP
         margin-right: 1rem;
     }
 
-    section.planning div.box-txt>h2 {
-        padding-top: 5rem;
+    section.planning div.box:first-child{
+        margin-top: 2rem;
+    }
+
+    section.planning div.box:first-child h2{
+        margin-top: 10rem;
     }
 
     section.planning div.box-txt>p {
@@ -612,7 +645,7 @@ DESKTOP
     }
 
     section.planning div.container>div.box:last-child {
-        margin: 5rem 0 0 2rem;
+        margin: 7rem 0 0 2rem;
     }
 
 
